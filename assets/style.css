@@ -1,0 +1,14 @@
+* {
+    background-color: rgb(67, 128, 204);
+}
+
+header {
+    display: flex;
+    background-color: rgb(4, 32, 74);
+}
+
+li {
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+}
