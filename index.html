@@ -11,28 +11,61 @@
         <h1>JLee</h1>
         <nav>
             <ul>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Work">Work</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#About">< ABOUT ></a></li>
+                <li><a href="#Work">< WORK ></a></li>
+                <li><a href="#Contact">< CONTACT ></a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <h2>About</h2>
-        <p></p>
-    </section>
+    <main>
+        <section class="about" id="About">
+            <h2>< About ></h2>
+            <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+            <div class="flip-image" ontouchstart="this.classList.toggle('hover');">
+                <div class="flip">
+                    <div class="front">
+                        <img src="./assets/img/pixil-frame-0.png" alt="">
+                    </div>
+                    <div class="back">
+                        <img src="./assets/img/unnamed.jpg" alt="">
+                    </div>
+                </div>
+            </div>    
+        </section>
 
-    <section>
-        <h2>Work</h2>
-        <p></p>
-    </section>
+        <section class="work" id="Work">
+            <h2>< Work ></h2>
+                <div class="work-img" id="card1">
+                    <a href="https://github.com/jodielee062788/landing-page"><img src="./assets/img/Landing page.png" alt=""></a>
+                </div>
+            <div class="container3">
+                <div class="work-img">
+                    <a href="https://github.com/jodielee062788/Red-Velvet"><img src="./assets/img/jodielee062788.github.io_Red-Velvet_.png" alt=""></a>
+                </div>
+                
+                <div class="work-img">
+                    <a href="https://github.com/jodielee062788/odinrecipe"><img src="./assets/img/Odinrecipe.png" alt=""></a>
+                </div>
 
-    <section>
-        <h2>Contact</h2>
-        <p></p>
-    </section>
+                <div class="work-img">
+                    <a href="#coming-soon"><img src="" alt="">CS</a>
+                </div>
+            </div>
+        </section>
 
+        <section class="contact" id="Contact">
+                <h2 class="contact-text">< Contact ></h2>
+                    <div class ="logo">
+                        <a href="mailto:jodielee062788@gmail.com" title="E-mail"><img src="./assets/img/envelope.png" alt="email logo"></a>
+                        <a href="https://github.com/jodielee062788" title="Github"><img src="./assets/img/github.png" alt="github logo"></a>
+                        <a href="https://www.twitter.com/jodieleeleelee" title="Twitter"><img src="./assets/img/twitter.png" alt="email logo"></a>
+                        <a href="https://www.instagram.com/jodieleely" title="Instagram"><img src="./assets/img/instagram.png" alt="email logo"></a> 
+                    </div>
+                    <p></p>
+            </div>
+        </section>
+    </main>
     <footer>
         <nav>
             <p>Copyright</p>
