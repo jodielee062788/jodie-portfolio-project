@@ -28,17 +28,16 @@ To run this project locally, follow these steps:
 
 Explore my portfolio to learn more about me and my projects. Navigate through the different sections, including "About," "Portfolio," and "Contact." Each section provides insights into my skills, work, and ways to get in touch with me.
 
-    ```md
-    ![alt text](assets/img/website screenshot.png)
-    ```
+![Screenshot of my Website](assets/img/website screenshot.png)
+
 ## Credits
 
 - Jodie Lee
-- Cat pixelated logo and pixelated avatar are made by Jodie
+- Pixelated cat logo and pixelated avatar are made by Jodie
 
 ## Third-Party Assets
 - [JetBrains Mono Font](fonts/JetBrainsMono-VariableFont_wght.ttf)
-- [Email Logo created by Freepik - Flaticon<](https://www.flaticon.com/free-icons/email)
+- [Email Logo created by Freepik - Flaticon](https://www.flaticon.com/free-icons/email)
 - [Twitter icons created by Ruslan Babkin - Flaticon](https://www.flaticon.com/free-icons/twitter)
 - [Instagram logo icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/instagram-logo)
 - [Github icons created by Ruslan Babkin - Flaticon](https://www.flaticon.com/free-icons/github)
