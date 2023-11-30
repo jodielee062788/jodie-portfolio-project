@@ -30,6 +30,8 @@ Explore my portfolio to learn more about me and my projects. Navigate through th
 
 ![Screenshot of my portfolio website](assets/img/website-screenshot.png)
 
+![Screenshot of responsive web design](assets/img/website-responsive.png)
+
 ## Credits
 
 - Jodie Lee
