@@ -28,7 +28,7 @@ To run this project locally, follow these steps:
 
 Explore my portfolio to learn more about me and my projects. Navigate through the different sections, including "About," "Portfolio," and "Contact." Each section provides insights into my skills, work, and ways to get in touch with me.
 
-![Screenshot of my Website](assets/img/website screenshot.png)
+![Screenshot of my portfolio website](assets/img/website-screenshot.png)
 
 ## Credits
 
