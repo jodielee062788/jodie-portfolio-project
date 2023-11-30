@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Jodie</title>
 </head>
-<body>
+<body class="desktop-view">
     <header>
-        <img src="./assets/img/cat logo.png" alt="">
+        <img src="./assets/img/cat logo.png" alt="pixelated cat logo">
         <h1>JLee</h1>
-        <nav>
+        <nav aria-label="Main navigation">
             <ul>
                 <li><a href="#About">< ABOUT ></a></li>
                 <li><a href="#Portfolio">< PORTFOLIO ></a></li>
@@ -30,53 +30,68 @@
             <div class="flip-image" ontouchstart="this.classList.toggle('hover');">
                 <div class="flip">
                     <div class="front">
-                        <img src="./assets/img/pixil-frame-0.png" alt="">
+                        <img src="./assets/img/pixil-frame-0.png" alt="pixelated art of web developer">
                     </div>
                     <div class="back">
-                        <img src="./assets/img/unnamed.jpg" alt="">
+                        <img src="./assets/img/unnamed.jpg" alt="picture of website developer">
                     </div>
                 </div>
             </div>    
         </section>
 
-        <section class="work" id="Portfolio">
+        <section class="portfolio" id="Portfolio">
             <h2>< PORTFOLIO ></h2>
             <div class="container">   
                 <div class="work-img" id="card1">
-                    <a href="https://github.com/jodielee062788/landing-page"><img src="./assets/img/Landing page.png" alt=""></a>
+                    <a href="https://github.com/jodielee062788/landing-page"><img src="./assets/img/Landing page.png" alt="picture of the landing page website made by the developer"></a>
                     <h3>Landing Page</h3>
-                <div class="divider">//</div>
+                    <p>HTML/CSS</p>
                 </div>
             <div class="container2">  
                     <div class="work-img">
-                        <a href="https://github.com/jodielee062788/Red-Velvet"><img src="./assets/img/jodielee062788.github.io_Red-Velvet_2.png" alt=""></a>
+                        <a href="https://github.com/jodielee062788/Red-Velvet"><img src="./assets/img/jodielee062788.github.io_Red-Velvet_2.png" alt="picture of a website about red velvet"></a>
                         <h3>Red Velvet Website</h3>
+                        <p>HTML/CSS</p>
                     </div>
                     
                     <div class="work-img">
-                        <a href="https://github.com/jodielee062788/odinrecipe"><img src="./assets/img/Odinrecipe.png" alt=""></a>
+                        <a href="https://github.com/jodielee062788/odinrecipe"><img src="./assets/img/Odinrecipe.png" alt="picture of a website called odin recipes which shows different recipes of dessert"></a>
                         <h3>Odin Recipes</h3>
+                        <p>HTML/CSS</p>
                     </div>
-
             </div>
             </div>
+                <div class="work-img" id="coming-soon">
+                    <img src="./assets/img/Coming Soon.png" alt="a picture with a more coming soon text">
+                </div>
         </section>
 
         <section class="contact" id="Contact">
                 <h2 class="contact-text">< CONTACT ></h2>
+                <div class="question-box">
+                    <form>
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <input type="text" placeholder="Subject">
+                        <div>
+                            <textarea class="form-control" rows="5" placeholder="Project Details"></textarea>
+                        </div>
+                    </form>
+                    <a href="mailto:jodielee062788@gmail.com" title="E-mail"><button type="button">Send Message</button></a>
+                </div>
+
                     <div class ="logo">
                         <a href="mailto:jodielee062788@gmail.com" title="E-mail"><img src="./assets/img/envelope.png" alt="email logo"></a>
                         <a href="https://github.com/jodielee062788" title="Github"><img src="./assets/img/github.png" alt="github logo"></a>
-                        <a href="https://www.twitter.com/jodieleeleelee" title="Twitter"><img src="./assets/img/twitter.png" alt="email logo"></a>
-                        <a href="https://www.instagram.com/jodieleely" title="Instagram"><img src="./assets/img/instagram.png" alt="email logo"></a> 
+                        <a href="https://www.twitter.com/jodieleeleelee" title="Twitter"><img src="./assets/img/twitter.png" alt="twitter logo"></a>
+                        <a href="https://www.instagram.com/jodieleely" title="Instagram"><img src="./assets/img/instagram.png" alt="instagram logo"></a> 
                     </div>
-                    <p></p>
             </div>
         </section>
     </main>
     <footer>
         <nav>
-            <p>Copyright</p>
+            <p>Website designed by Jodie Lee</p>
         </nav>
     </footer>
 

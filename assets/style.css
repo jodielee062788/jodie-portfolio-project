@@ -1,15 +1,18 @@
+/* Define custom font */
 @font-face {
     font-family: mainFont;
     src: url(fonts/JetBrainsMono-VariableFont_wght.ttf);
 }
 
+/* Reset default styles for all elements */
 * {
     box-sizing: border-box;
     font-family: mainFont;
     margin: 0;
     padding: 0;
-    }
+}
 
+/* Header and Footer styling */
 header,
 footer {
     display: flex;
@@ -19,12 +22,14 @@ footer {
     font-weight: bold;
 }
 
+/* Logo styling within the header */
 header img {
     height: 48px;
     width: auto;
     margin: 10px 0 0 20px;
 }
 
+/* Main heading styling */
 h1 {
     display: flex;
     align-items: center;
@@ -34,6 +39,7 @@ h1 {
     text-shadow: 3px 3px #06c078;
 }
 
+/* Navigation bar styling */
 nav {
     display: flex;
     margin-left: auto;
@@ -41,28 +47,33 @@ nav {
     margin-right: 35px;
 }
 
+/* Navigation link styling */
 nav a:hover {
     text-decoration: overline solid #06c078 3px;
     color: #06c078;
     text-shadow: 2px 2px #baebba;
 }
 
+/* Unordered list (nav items) styling */
 ul {
-    display: flex; /* Make the list items horizontal */
+    display: flex;
     gap: 30px;
     font-size: 21px;
     text-shadow: 2px 2px #06c078;
 }
 
+/* Remove default list styling */
 li {
     list-style-type: none;
 }
 
+/* Basic link styling */
 a {
     text-decoration: none;
     color: #fff;
 }
 
+/* About section styling */
 .about {
     display: flex;
     background-color: rgb(228, 242, 254);
@@ -72,22 +83,26 @@ a {
     border-bottom: solid 3px #06c078;
 }
 
+/* Heading 2 styling for About section */
 h2 {
     margin-left: 65px;
-    padding: 15px; /* Add padding for spacing */
+    padding: 12px;
     border: outset 6px black;
     border-radius: 15px;
     background-color:#fbc6bd;
     box-shadow: 4px 4px grey;
     color: black;
-
+    font-size: 35px;
 }
 
+/* Another Heading 2 style - make sure to consolidate styles */
 h2 {
     font-size: 35px;
-    
 }
+
+/* Image within the About section */
 .about img {
+    max-width: 100%;
     height: 400px;
     width: auto;
     border: outset 7px black;
@@ -96,6 +111,7 @@ h2 {
     align-self: center;
 }
 
+/* Paragraph within the About section */
 .about p {
     width: 40%;
     font-size: 22px;
@@ -103,138 +119,188 @@ h2 {
     text-justify: inter-word;
 }
 
+/* Name styling */
 .name {
-   font-size: 28px;
-   color:#06c078;
-   font-weight: bolder;
+    font-size: 28px;
+    color:#06c078;
+    font-weight: bolder;
 }
 
-/* flip-image styles */
+/* Flip-image container styling */
 .flip-image {
-	perspective: 1000px;
+    perspective: 1000px;
     margin: 60px 120px 0 0;
 }
 
-/* flip the pane when hovered */
+/* Flip effect on hover */
 .flip-image:hover .flip, .flip-image.hover .flip {
-	transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
+/* Styles for front and back of the flip container */
 .flip-image, .front, .back {
-	width: 320px;
-	height: 480px;
+    width: 320px;
+    height: 480px;
 }
 
-/* flip speed goes here */
+/* Flip transition speed */
 .flip {
-	transition: 0.6s;
-	transform-style: preserve-3d;
-	position: relative;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
 }
 
-/* hide back of pane during swap */
+/* Hide back of pane during swap */
 .front, .back {
-	backface-visibility: hidden;
-	position: absolute;
-	top: 0;
-	left: 0;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-/* front pane, placed above back */
+/* Styling for the front of the flip container */
 .front {
-	z-index: 2;
-	/* for firefox 31 */
-	transform: rotateY(0deg);
+    z-index: 2;
+    transform: rotateY(0deg);
 }
 
-/* back, initially hidden pane */
+/* Styling for the back of the flip container */
 .back {
-	transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
-.work {
+/* Portfolio section styling */
+.portfolio {
     display: flex;
     background-color: rgb(228, 242, 254);
-    height: 950px;
+    height: 1100px;
     align-items: center;
     border-bottom: solid 3px #06c078;
 }
 
+/* Container within Portfolio section */
 .container {
-    display: block;
-    margin-left: 300px;
+    display: inline-block;
+    margin-left: 250px;
     flex-wrap: wrap;
 }
 
+/* Image within the container */
 .container img {
     position: relative;
     text-align: center;
     width: 600px;
     height: auto;
-    border: solid 4px black;
+    border: groove 4px black;
+    border-radius: 10px;
+    background-color: rgb(184, 182, 182);
+    filter: blur(3px);
 }
 
+/* Hover effect on the container */
+.container #card1:hover {
+    box-shadow: 5px 5px #06c078;
+}
+
+/* Hover effect on the container image */
 .container #card1 img:hover {
-    flex-wrap: wrap;
-    width: 610px;
-    height: auto;
     box-shadow: 5px 5px grey;
-    flex-shrink: 0;
+    filter: none;
 }
 
-.container .work-img {
-    padding: 15px; /* Add padding for spacing */
+/* Another container styling (consider consolidating) */
+.container .work-img,
+#coming-soon img {
+    padding: 15px;
     border: outset 6px black;
     border-radius: 15px;
-    background-color:#fbc6bd;
+    background-color: #baebba;
     box-shadow: 4px 4px grey;
     color: black;
     text-align: center;
 }
 
-/*.container .work-img .LP:hover {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}*/
-
+/* Second container within Portfolio section */
 .container2 {
     display: flex;
-    justify-content: space-between;
+    gap: 40px;
     margin-top: 30px;
     flex-wrap: wrap;
 }
 
+/* Image within the second container */
 .container2 img {
     width: 270px;
     height: auto;
+    border: groove 4px black;
 }
 
+/* Hover effect on the second container image */
 .container2 img:hover {
-    flex-wrap: wrap;
-    width: 280px;
-    height: auto;
     box-shadow: 5px 5px grey;
+    filter: none;
 }
 
+/* Hover effect on the second container text/image */
+.container2 .work-img:hover,
+#coming-soon img:hover {
+    box-shadow: 5px 5px #06c078;
+}
+
+/* Heading 3 styling */
 h3 {
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 10px;
+    color: #fff;
+    text-shadow: 2px 2px #06c078;
 }
 
+/* Paragraph within the Portfolio section */
+.portfolio p {
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+/* Coming soon image styling */
+#coming-soon img {
+    height: 400px;
+    width: 320px;
+    margin-left: 60px;
+    border-radius: 30px;
+}
+
+/* Contact section styling */
 .contact {
     display: flex;
     background-color: rgb(228, 242, 254);
     height: 250px;
     align-items: center;
-    justify-content: space-between;
-    border-bottom: solid 3px salmon;
+    justify-content: space-evenly;
+    border-bottom: solid 3px #06c078;
 }
 
+/* Text within the contact section */
 .contact-text {
     margin-bottom: 25px;
 }
 
+/* Textarea styling */
+textarea {
+    width: 603px;
+    margin-top: 10px;
+}
+
+/* Button styling */
+button {
+    margin-top: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Logo image styling */
 .logo img {
     width: 40px;
     height: auto;
@@ -242,20 +308,136 @@ h3 {
     border-radius: 50%;
 }
 
+/* Hover effect on the logo image */
 .logo img:hover {
     box-shadow: 2px 2px #06c078;
     border-radius: 50%;
 }
 
-/* Add the following styles to handle responsive design */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column; /* Stack items vertically on small screens */
-        align-items: flex-start; /* Align items to the start of the container */
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+    body.desktop-view {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    header,
+    main,
+    footer {
+        width: 100%;
+        box-sizing: border-box;
     }
 
     ul {
-        margin-top: 10px; /* Add some spacing between list items on small screens */
-        gap: 0; /* Remove the gap between list items */
+       display:none;
+    }
+
+    /* General styling for sections on small screens */
+    .about,
+    .portfolio,
+    .contact {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center; 
+        height: 100%;
+        width: auto;
+    }
+
+    /* Additional styling for the About section on small screens */
+    .about p {
+        font-size: 15px;
+        width: auto;
+        margin-top: 15px;
+    }
+
+    /* Adjusted styling for the name in the About section */
+    .name {
+        font-size: 20px;
+    }
+
+    /* Heading 2 styling adjustment */
+    h2 {
+        order: -1;
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+
+    /* Image within the About section adjustment */
+    .about img {
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    /* Additional adjustment for the About section paragraph */
+    .about p {
+        margin-top: 15px;
+    }
+    
+    /* Center the flip-image horizontally and add some top margin */
+    .flip-image {
+        margin: 20px auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Adjusted width for better responsiveness */
+    .flip-image, .front, .back {
+        width: 100%;
+    }
+
+    /* Flip effect adjustment on small screens */
+    .flip-image:hover .flip, .flip-image.hover .flip {
+        transform: rotateY(180deg);
+    }
+
+    /* Portfolio section adjustment for small screens */
+    .portfolio {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center; 
+        height: 100%;
+        width: auto;
+    }
+
+    #coming-soon {
+        display: none;
+    }
+
+    /* Adjusted margin for better spacing in the container */
+    .container {
+        margin-left: 20px;
+        width: 50%;
+    }
+
+    /* Make container images responsive */
+    .container img {
+        width: 100%;
+    }
+
+    /* Additional adjustments for the second container */
+    .container2 {
+        margin-top: 20px;
+        gap: 15px;
+    }
+
+    /* Contact section adjustment for small screens */
+    .contact {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center; 
+        height: 100%;
+        width: auto;
+    }
+
+    /* Make textarea responsive */
+    textarea {
+        width: 100%;
+    }
+
+    /* Additional margin for better spacing in the contact section */
+    .contact-text {
+        margin-bottom: 25px;
+        margin-top: 20px;
     }
 }
