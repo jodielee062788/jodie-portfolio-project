@@ -35,7 +35,7 @@ h1 {
     align-items: center;
     margin-left: 10px;
     font-size: 34px;
-    color: #fff;
+    color: b;
     text-shadow: 3px 3px #06c078;
 }
 
@@ -252,7 +252,7 @@ h3 {
     font-size: 22px;
     font-weight: bold;
     padding-top: 10px;
-    color: #fff;
+    color: black;
     text-shadow: 2px 2px #06c078;
 }
 
